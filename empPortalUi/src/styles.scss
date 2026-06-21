@@ -1,0 +1,40 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background: #ffffff;
+  color: #212121;
+}
+
+body.dark-theme {
+  background: #121212;
+  color: #ffffff !important;
+}
+
+/* Cards */
+body.dark-theme .mat-mdc-card {
+  background: #1e1e1e;
+  color: #ffffff !important;
+}
+
+/* Sidebar */
+body.dark-theme .mat-drawer {
+  background: #1e1e1e;
+  color: #ffffff !important;
+}
+
+/* Toolbar */
+body.dark-theme .mat-toolbar {
+  background: #242424;
+  color: #ffffff !important;
+}
+
+body.dark-theme .mdc-list-item__primary-text {
+  color: white !important;
+}
+
+body.dark-theme .mat-icon {
+  color: white !important;
+}

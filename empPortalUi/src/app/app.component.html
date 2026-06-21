@@ -1,0 +1,23 @@
+<app-header
+  (menuClicked)="toggleSidebar()">
+</app-header>
+
+<mat-sidenav-container class="container">
+
+  <mat-sidenav
+    #drawer
+    [opened]="sidebarOpen"
+    mode="side">
+
+    <app-sidebar></app-sidebar>
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
