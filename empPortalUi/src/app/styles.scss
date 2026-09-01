@@ -1,0 +1,67 @@
+@use './styles/material-theme';
+
+/* Global */
+
+/**
+ThemeService → switches between light and dark mode.
+Material Theme → styles Angular Material components.
+Variables → shared design values used throughout the app.
+Components → consume those variables.
+*/
+
+
+html,
+body {
+
+    height: 100%;
+    margin: 0;
+
+}
+
+body {
+
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    transition:
+        background-color .3s ease,
+        // color .3s ease;
+
+}
+
+
+:root {
+  /* Light Theme */
+  --app-bg: #f5f5f5;
+  --surface-bg: #ffffff;
+  --text-color: #212121;
+
+  --footer-bg: #fafafa;
+
+  --border-color: #e0e0e0;
+
+  --active-menu-bg: #1976d2;
+  --active-menu-text: #ffffff;
+  --success-color: #2e7d32;
+  --warning-color: #ed6c02;
+  --error-color: #d32f2f;
+
+  --login-bg: linear-gradient(135deg, #e3f2fd, #f5f5f5);
+}
+
+body.dark-theme {
+  /* Dark Theme */
+  --app-bg: #121212;
+  --surface-bg: #1e1e1e;
+  --text-color: #ffffff;
+
+  --footer-bg: #1e1e1e;
+
+  --border-color: #424242;
+
+  --active-menu-bg: #64b5f6;
+  --active-menu-text: #121212;
+   --success-color: #4caf50;
+  --warning-color: #ffb74d;
+  --error-color: #ef5350;
+
+  --login-bg: linear-gradient(135deg, #0f172a, #1e293b);
+}

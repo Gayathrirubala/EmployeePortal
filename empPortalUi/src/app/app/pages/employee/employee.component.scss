@@ -1,0 +1,52 @@
+table {
+  width: 100%;
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.mat-mdc-row:hover {
+  background: rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+}
+
+mat-card {
+  border-radius: 16px;
+}
+
+th {
+  font-weight: 600;
+}
+
+.empSearchBox{
+    width: 70%;
+}
+
+#empyAddBtn{
+    margin:0 5% !important;
+}
+
+
+.mat-column-actions {
+  width: 200px;
+  min-width: 200px;
+  text-align: center;
+}
+
+
+.action-buttons {
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.action-buttons button {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+}

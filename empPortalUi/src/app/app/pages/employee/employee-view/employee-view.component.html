@@ -1,0 +1,11 @@
+<article>
+    @if(employee()){
+        <p>{{employee()?.firstName}}</p>
+        <p>{{employee()?.lastName}}</p>
+        <p>{{employee()?.email}}</p>
+        <p>{{employee()?.company?.department}}</p>
+        <p>{{employee()?.company?.title}}</p>
+    }@else{
+        <p>User Not Found</p>
+    }
+</article>

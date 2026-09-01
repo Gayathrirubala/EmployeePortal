@@ -1,0 +1,14 @@
+mat-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.title {
+    margin-left: 12px;
+    font-weight: 600;
+}

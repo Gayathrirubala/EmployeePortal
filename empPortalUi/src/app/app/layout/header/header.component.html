@@ -1,0 +1,46 @@
+<mat-toolbar>
+    <button mat-icon-button (click)="layoutService.toogleSide()">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>Employee Portal</span>
+    <span class="spacer"></span>
+    <button mat-icon-button>
+        <mat-icon>notification</mat-icon>
+    </button>
+     <button mat-icon-button (click)="themeService.toggleTheme()">
+        <mat-icon> {{themeService.theme()=='dark' ? 'light_mode':'dark_mode'}}</mat-icon>
+    </button>
+
+    <button mat-icon-button [matMenuTriggerFor]="profileMenu">
+        @if(user()?.image){
+            <img [src]="user()?.image" class="avatar" [alt]="user()?.firstName">
+        }@else{
+        <mat-icon>account_circle</mat-icon>
+        }
+         @if(user()?.firstName){
+    <!-- <span>{{user()?.firstName }}</span> -->
+    }
+    </button>
+   
+
+    <mat-menu #profileMenu="matMenu">
+
+     <button mat-menu-item routerLink="/profile">
+        <mat-icon>person</mat-icon>
+        <span>My Profile</span>
+    </button>
+
+    <button mat-menu-item routerLink="/settings">
+        <mat-icon>settings</mat-icon>
+        <span>Settings</span>
+    </button>
+
+    <mat-divider></mat-divider>
+
+    <button mat-menu-item (click)="logout()">
+        <mat-icon color="warn">logout</mat-icon>
+        <span>Logout</span>
+    </button>
+
+    </mat-menu>
+</mat-toolbar>

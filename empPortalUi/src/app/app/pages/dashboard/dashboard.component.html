@@ -1,0 +1,30 @@
+<h2>Dashboard</h2>
+
+<p>Welcome back 
+    @if(user()){
+        {{user()?.firstName}}
+    }
+    👋
+</p>
+
+<div class="card-grid">
+
+    @for(card of cards(); track card.title){
+
+        <mat-card>
+
+            <mat-card-content>
+
+                <mat-icon>{{card.icon}}</mat-icon>
+
+                <h2>{{card.count}}</h2>
+
+                <p>{{card.title}}</p>
+
+            </mat-card-content>
+
+        </mat-card>
+
+    }
+
+</div>
